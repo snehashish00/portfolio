@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+
+:root {
+    --mus: #E3B448;
+    --forest: #3A6B35;
+    --sage: #CBD18F;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Handjet', cursive;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main {
+    position: relative; /* pages will not overlap  */
+    overflow: hidden;  /* extra will be hidden */
+}
+#page{
+    position: relative; /* relative so that it will behave top botton left right acc. to "page", not the main div[ page+pag1 ].*/
+    height: 100vh;
+    width: 100vw;
+}
+#page>img {
+    position: absolute; /* absolute will work w.r.t to the main*/
+    right: 9%;
+    top: 55%;
+    height: 77%;
+    width: 34%;
+    transform: translateY(-50%);
+}
+#page>#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    z-index: 9;
+}
+#center-nav {
+    display: flex;
+    gap: 20px;
+}
+#center-nav>a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 40px;
+}
+#nav>input {
+    padding: 4px 7px;
+    border-radius: 10px;
+    border: 4px dashed black;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#text {
+    padding: 30px 50px;
+    position: relative;
+    margin: 10px 20px;
+    top: 18%;
+    left: 8%;
+    height: 75%;
+    width: 35%;
+    /* background-color: red; */
+    scale: 1.1;
+}
+#text>h1 {
+    font-size: 90px;
+    line-height: 1;
+    margin: 20px;
+}
+#text>h4 {
+    margin-top: 30px;
+    color: #5e5e5e;
+    font-size: 20px;
+}
+#text>h3 {
+    position: absolute;
+    color: rgb(63, 14, 78);
+    transform: rotate(-20deg);
+    left: 10%;
+}
+#text>#buttons{
+    margin-top: 50px;
+}
+#text>#buttons>button{
+    margin-left: 10px;
+    padding: 15px 25px;
+    font-family: montserrat;
+    border: none;
+    border-radius: 10px;
+}
+#text>#buttons>#b1{
+    background-color: var(--forest);
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+#text>#buttons>#b1>i{
+    color: #fff;
+    font-size: 20px;
+}
+#text>#buttons>#b2{
+    border: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+}
+#text>#buttons>#b2>i{
+    color: #000;
+    font-size: 20px;
+}
+
+
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--sage);
+}
+#page1>#left {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+    width: 35%;
+}
+#left>.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 33.3%;
+    width: 100%;
+    background-color: var(--mus);
+    border-top: 2px solid #000;
+}
+#left>.box>h4 {
+    font-size: 40px;
+}
+#left>.box>h1 {
+    font-size: 40px;
+}
+.circle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+    background-color: var(--forest);
+    border-radius: 50%;
+}
+.circle>i {
+    color: #fff;
+    font-size: 25px;
+}
+
+/* #text1{
+    margin: 50px 50px;
+    height: 40%;
+    width: 50%;
+    background-color: red;
+    position: absolute;
+    z-index: 9;
+} */
+/* #text1>h1{
+    font-size: 80px;
+    margin: 40px 10px;
+}
+#text1>h4{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 70%;
+    margin: 20px 20px;
+
+} */
+.text1 {
+    margin: 50px 50px;
+}
+.text1>h3 {
+    color:rgb(0, 0, 0);
+    transform: rotate(-20deg);
+    position: absolute;
+    /* left: -82%;
+    top: 10%; */
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: brown; */
+}
+#project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 90%;
+    /* background-color: red; */
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+.projects {
+    border-top: 2px solid #000;
+   height: 100%;
+   width: 30%;
+   /* background-color: indigo;  */
+}
+
+#text3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 30%;
+    width: 100%;
+    /* background-color: chocolate; */
+}
+#image {
+    height: 70%;
+    width: 100%;
+    background-color: var(--mus);
+}
+
+.p2 {
+    position: relative;
+    top: -15%;
+}
+.p3 {
+    position: relative;
+    top: -30%;
+}
+
+#text4 {
+    padding: 30px 50px;
+    position: absolute;
+    margin: 10px 20px;
+    top: 4%;
+    left: 3%;
+    height: 75%;
+    width: 35%;
+    scale: 1.1;
+}
+#text4>h1 {
+    font-size: 90px;
+    line-height: 1;
+    margin: 20px;
+}
+#text4>h3 {
+    position: absolute;
+    transform: rotate(-20deg);
+    left: 7%;
+    color: black;
+}
+
+#page3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--sage);
+}
+#left1 {
+    height: 70%;
+    width: 30%;
+}
+#right1 {
+    height: 35vw;
+    width: 35vw;
+    margin-right: 35px;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    height: 10%;
+    width: 50%;
+}
+.l1 {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    width: 32%;
+}
+.l2 {
+    left: 63%;
+    top: 45%;
+    width: 24%;
+    border-bottom: 2px solid black;
+    position: absolute;
+    transform: rotate(15deg);
+    transform-origin: left;
+}
+.c1 {
+    height: 10vw;
+    width: 10vw;
+}
+.c1>i {
+    font-size: 80px;
+}
+#text5 {
+    padding: 0px 30px;
+    position: relative;
+    margin: 0 50px;
+    height: 40%;
+    width: 100%;
+    scale: 1.1;
+}
+#text5>h1{
+    padding-top: 0px;
+    font-size: 70px;
+}
+#text5>h3{
+    transform: rotate(-20deg);
+    position: absolute;
+    top: -5%;
+    left: 2%;
+    font-size: 15px;
+}
+#info {
+    margin: 10px 70px;
+    height: 50%;
+    width: 100%;
+    /* background-color: green; */
+}
+.infos {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-left: 20px;
+    height: 50%;
+    width: 90%;
+    /* background-color: indianred; */
+    border-top: 2px solid black;
+}
+.i1{
+    background-color: #fff;
+}
+.i1>i {
+    color: black;
+}
